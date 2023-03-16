@@ -1,0 +1,14 @@
+.u-hidden { display: none !important; }
+
+
+@media screen and (min-width: 796px) { /* pc */
+
+}
+
+@media screen and (max-width: 795px) { /* sp */
+
+}
+
+.u-mb-10 { margin-bottom: 10px !important; }
+
+
