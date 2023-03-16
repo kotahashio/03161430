@@ -1,0 +1,76 @@
+/* 共通スタイルは外に書く */
+.whole{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.img-pc1{
+  display:block;
+}
+.img-sp{
+  display:none;
+}
+.title{
+  margin-top: 20px;
+  font-size: 25px;
+}
+.text{
+  margin-top: 20px;
+}
+
+/* ここからPC */
+@media screen and (min-width: 796px){
+  .container{
+    padding: 40px;
+  }
+  .container:not(:last-child){
+    border-bottom: 1px solid #000;
+  }
+  .wrapper{
+    width: 30%;
+  }
+  .wrapper:not(:first-child){
+    margin-left: 30px;
+  }
+  .wrap{
+    display: flex;
+    justify-content: center;
+  }
+  .container:nth-child(n+4) .wrap:last-child{
+    margin-top: 20px;
+  }
+  .space{
+    height: 75px;
+  }
+  .text-img{
+    width: 100%;
+  }
+}
+
+/* ここからSP */
+@media screen and (max-width: 795px){
+  .img-pc1{
+    display:none;
+  }
+  .img-sp{
+    margin: 0 auto;
+    width: 400px;
+    display:block;
+  }
+  .container{
+    padding: 30px;
+    text-align: center;
+  }
+  .container:first-child{
+    border-bottom: 1px solid #000;
+  }
+  .wrapper:last-child{
+    margin-top: 30px;
+  }
+  .text-img{
+    margin: 0 auto;
+    width: 400px;
+  }
+  .container:nth-child(n+3){
+    display: none;
+  }
+}
