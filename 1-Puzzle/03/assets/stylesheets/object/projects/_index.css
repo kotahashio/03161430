@@ -1,0 +1,161 @@
+/* 共通スタイルは外に書く */
+.header{
+  padding: 20px 40px;
+}
+.main{
+  padding: 20px;
+}
+.main-title{
+  color:#f00;
+}
+.main-txt{
+  margin-top: 20px;
+}
+.p-txt:not(:nth-child(1)){
+  margin-top: 10px;
+}
+.aside{
+  padding: 20px;
+}
+.aside-txt{
+  color: #00f;
+}
+.aside-txt-box{
+  margin-top: 20px;
+}
+.link-box{
+  /* margin-top: 20px; */
+  display: flex;
+}
+.link-box-item{
+  color: #fff;
+  /* margin-top: 20px; */
+}
+.a{
+  background-color: #333;
+  border: 1px solid #d98d30;
+  display: block;
+}
+.aside-content{
+  margin-top: 50px;
+}
+.content-day{
+  font-family: 'Roboto-Light';
+}
+.content-txt{
+  color: #999;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  text-align: center;
+}
+.footer-txt{
+  color: #0f0;
+}
+@media screen and (min-width: 796px) { pc用スタイル
+  .body{
+    width: 100%;
+  }
+  .header{
+    background-color: #141f40;
+    /* padding: 20px 40px; */
+  }
+  .header-logo{
+    width: 100px;
+  }
+  .container{
+    display: flex;
+  }
+  .main{
+    background-color: #80bfa8;
+    flex-basis: 30%;
+  }
+  .main-title{
+    font-size: 25px;
+  }
+  .main-txt{
+    font-size: 18px;
+  }
+  .main-txt-size{
+    font-size: 10px;
+  }
+  .aside{
+    background-color: #8c2727;
+    flex-basis: 70%;
+  }
+  .aside-txt{
+    font-size: 20px;
+  }
+  .link-box-item:not(:nth-child(1)){
+    margin-left: 20px;
+  }
+  .a{
+    padding: 5px 30px;
+  }
+  .content-txt{
+    font-size: 18px;
+  }
+  .footer{
+    background-color: #d98d30;
+  }
+  .footer-logo{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .header{
+    background-color: #e91e63;
+  }
+  .header-logo{
+    width: 50px;
+  }
+  .main{
+    background-color: #0093b7;
+  }
+  .main-title{
+    font-size: 20px;
+  }
+  .main-txt{
+    font-size: 13px;
+  }
+  .main-txt-size{
+    font-size: 30px;
+  }
+  .aside{
+    background-color: #dbd400;
+  }
+  .aside-txt{
+    font-size: 10px;
+  }
+  .link-box{
+    justify-content: space-between;
+  }
+  .link-box-item{
+    padding: 5px 0;
+    width: 30%;
+    text-align: center;
+  }
+  .dl{
+    display: flex;
+    text-align: center;
+  }
+  .content-day{
+    margin-right: 20px;
+    align-self: center;
+  }
+  .content-txt{
+    font-size: 13px;
+    display: inline-block;
+    text-align: left;
+  }
+  .footer{
+    background-color: #170e38;
+  }
+  .footer-logo{
+    font-size: 13px;
+    color: #fff;
+  }
+}
